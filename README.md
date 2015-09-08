@@ -8,7 +8,7 @@ Book link:
   - [Amazon](http://www.amazon.com/Redis-Essentials-Maxwell-Dayvson-Silva/dp/1784392456/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=&sr=)
 
 
-###List of Chapters:
+###Table of Contents:
   
 * Chapter 1: Getting Started (The Baby Steps)
 * Chapter 2: Advanced Data Types (Earning a Black Belt)
