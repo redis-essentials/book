@@ -1,0 +1,6 @@
+{
+       "name": "redis/chapter5",
+       "require": {
+           "predis/predis": "~1.0"
+       }
+}
