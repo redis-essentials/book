@@ -2,21 +2,21 @@ var redis = require("redis"); // 1
 var client = redis.createClient(); // 2
 
 function upVote(id) { // 3
-	var key = "article:" + id + ":votes"; // 4 
-	client.incr(key); // 5
+  var key = "article:" + id + ":votes"; // 4 
+  client.incr(key); // 5
 }
 
 function downVote(id) { // 1
-	var key = "article:" + id + ":votes"; // 2 
-	client.decr(key); // 3
+  var key = "article:" + id + ":votes"; // 2 
+  client.decr(key); // 3
 }
 
 function showResults(id) {
-	var headlineKey = "article:" + id + ":headline";
-	var voteKey = "article:" + id + ":votes"; 
-	client.mget([headlineKey, voteKey], function(err, replies) { // 1
-		console.log('The article "' + replies[0] + '" has', replies[1], 'votes'); // 2
-	}); 
+  var headlineKey = "article:" + id + ":headline";
+  var voteKey = "article:" + id + ":votes"; 
+  client.mget([headlineKey, voteKey], function(err, replies) { // 1
+    console.log('The article "' + replies[0] + '" has', replies[1], 'votes'); // 2
+  }); 
 }
 
 upVote(12345); // article:12345 has 1 vote

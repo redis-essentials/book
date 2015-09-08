@@ -1,9 +1,9 @@
 var redis = require("redis");
 var client = redis.createClient();
 if (process.argv.length < 3) { // 1
-    console.log("ERROR: You need to specify a data type!"); 
-    console.log("$ node using-timeseries.js [string|hash]"); 
-    process.exit(1);
+  console.log("ERROR: You need to specify a data type!"); 
+  console.log("$ node using-timeseries.js [string|hash]"); 
+  process.exit(1);
 }
 
 var dataType = process.argv[2]; // 2
@@ -18,13 +18,13 @@ item1Purchases.insert(beginTimestamp + 3); // 10
 item1Purchases.insert(beginTimestamp + 61); // 11
 
 function displayResults(granularityName, results) { // 12 
-    console.log("Results from " + granularityName + ":"); 
-    console.log("Timestamp \t| Value"); 
-    console.log("--------------- | ------");
-    for (var i = 0 ; i < results.length; i++) {
-        console.log('\t' + results[i].timestamp + '\t| ' + results[i].value);
-    }
-    console.log();
+  console.log("Results from " + granularityName + ":"); 
+  console.log("Timestamp \t| Value"); 
+  console.log("--------------- | ------");
+  for (var i = 0 ; i < results.length; i++) {
+    console.log('\t' + results[i].timestamp + '\t| ' + results[i].value);
+  }
+  console.log();
 }
 
 
