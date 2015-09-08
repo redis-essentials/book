@@ -3,7 +3,7 @@ Redis Essentials
 
 Source code of **Redis Essentials** book.
 
-Book link:
+Book links:
   - [Packt](https://www.packtpub.com/big-data-and-business-intelligence/redis-essentials)
   - [Amazon](http://www.amazon.com/Redis-Essentials-Maxwell-Dayvson-Silva/dp/1784392456/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=&sr=)
 
