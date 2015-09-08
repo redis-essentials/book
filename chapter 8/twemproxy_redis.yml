@@ -1,0 +1,10 @@
+my_cluster:
+  listen: 127.0.0.1:22121
+  hash: md5
+  distribution: ketama
+  auto_eject_hosts: true
+  redis: true
+  servers:
+    - 127.0.0.1:6666:1 server1
+    - 127.0.0.1:7777:1 server2
+    - 127.0.0.1:8888:1 server3
